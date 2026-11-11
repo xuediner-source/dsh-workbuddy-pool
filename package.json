@@ -1,0 +1,40 @@
+{
+  "name": "dsh-workbuddy-pool",
+  "version": "0.2.5",
+  "description": "WorkBuddy account pool management for DeepSeek Harness",
+  "license": "MIT",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "status.js",
+    "gateway.js",
+    "panel.js",
+    "channels.js",
+    "login.js",
+    "verify.js",
+    "client.js",
+    "cordis.patch.yml"
+  ],
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "meta": {
+    "title": "WorkBuddy 号池",
+    "description": "在 DSH 中查看与运维本机 WorkBuddy 号池：账号、任务、模型、配置、日志和渠道验证"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": ["slots"]
+    }
+  }
+}
