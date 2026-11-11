@@ -11,8 +11,6 @@
 - **模型 / 配置 / 日志**：展示网关模型列表；编辑并保存网关 `config.json`（部分字段需重启网关）；查看网关环形日志。
 - **命令**：`/workbuddy-pool [help|models|verify [模型]|checkin|travel|activity|keepalive|balance]`。
 
-不包含 CodeArts、ZCode、GPT/Codex 号池——它们属于 `dsh-xuediner-gateway` 插件的其他上游。
-
 ## 安装
 
 先看当前 DSH 在用哪个 profile（`$env:DSH_PROFILE`，未设置时默认为 `desktop`），用它替换下面的 `<profile>`。
